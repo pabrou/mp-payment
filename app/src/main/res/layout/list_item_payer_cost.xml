@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:id="@+id/content"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_height="wrap_content"
+    android:layout_width="match_parent"
+    android:clickable="true"
+    android:focusable="true"
+    android:padding="@dimen/medium_margin"
+    android:background="?android:attr/selectableItemBackground">
+
+    <TextView
+        android:id="@+id/recommended_message"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_toEndOf="@id/payment_method_image"
+        android:layout_marginBottom="8dp"
+        android:layout_alignParentTop="true"
+        android:textSize="@dimen/text_large"
+        android:textColor="@color/text_dark"
+        android:textStyle="bold"
+        tools:text="1 cuota de $ 1.500,00 ($ 1.500,00)"
+        />
+
+    <TextView
+        android:id="@+id/installments"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/recommended_message"
+        android:textSize="@dimen/text_small"
+        android:textColor="@color/text_dark"
+        tools:text="Cuotas: 0"
+        />
+
+    <TextView
+        android:id="@+id/installment_amount"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toEndOf="@id/installments"
+        android:layout_marginStart="@dimen/medium_margin"
+        android:layout_below="@id/recommended_message"
+        android:textSize="@dimen/text_small"
+        android:textColor="@color/text_dark"
+        tools:text="Monto: 0"
+        />
+
+    <TextView
+        android:id="@+id/total_amount"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toEndOf="@id/installment_amount"
+        android:layout_below="@id/recommended_message"
+        android:layout_marginStart="@dimen/medium_margin"
+        android:textSize="@dimen/text_small"
+        android:textColor="@color/text_dark"
+        tools:text="Total: 0"
+        />
+
+</RelativeLayout>

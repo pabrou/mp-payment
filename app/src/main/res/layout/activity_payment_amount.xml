@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.CoordinatorLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.pabrou.mppayment.ui.PaymentAmountActivity">
+
+    <android.support.design.widget.AppBarLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:theme="@style/AppTheme.AppBarOverlay">
+
+        <android.support.v7.widget.Toolbar
+            android:id="@+id/toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            android:background="?attr/colorPrimary"
+            app:popupTheme="@style/AppTheme.PopupOverlay" />
+
+    </android.support.design.widget.AppBarLayout>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:layout_behavior="@string/appbar_scrolling_view_behavior">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/medium_margin">
+
+            <TextView
+                android:id="@+id/amount_message"
+                android:layout_width="wrap_content"
+                android:layout_height="86dp"
+                android:layout_centerHorizontal="true"
+                android:layout_alignParentTop="true"
+                android:gravity="center"
+                android:text="@string/input_payment_amount_message"
+                android:textColor="@color/text_dark"
+                android:textSize="@dimen/text_xlarge"/>
+
+            <TextView
+                android:id="@+id/amount_currency"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_below="@id/amount_message"
+                android:layout_alignParentStart="true"
+                android:layout_marginTop="@dimen/medium_margin"
+                android:text="@string/currency_ar"
+                android:textSize="@dimen/text_xlarge"/>
+
+            <EditText
+                android:id="@+id/amount_payment_edit"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_toEndOf="@id/amount_currency"
+                android:layout_marginStart="8dp"
+                android:layout_alignBaseline="@id/amount_currency"
+                android:inputType="numberDecimal"
+                android:textSize="@dimen/text_xlarge"
+                android:hint="@string/amount" />
+
+            <android.support.v7.widget.AppCompatButton
+                android:id="@+id/next_button"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/next"
+                style="@style/DarkButton"
+                app:backgroundTint="@color/colorPrimaryDark"
+                android:layout_marginTop="@dimen/medium_margin"
+                android:layout_below="@id/amount_payment_edit"
+                android:layout_alignParentEnd="true"/>
+
+        </RelativeLayout>
+
+    </ScrollView>
+
+</android.support.design.widget.CoordinatorLayout>

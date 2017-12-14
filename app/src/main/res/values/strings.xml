@@ -1,0 +1,35 @@
+<resources>
+    <string name="app_name">Mercado Pago Exercise</string>
+
+    <string name="error_loading_data">Ocurrió un error cargando los datos.</string>
+    <string name="no_option_available">No se han encontrado opciones.</string>
+
+    <!-- Payment Amount Activity -->
+    <string name="input_payment_amount_message">Ingrese el monto a pagar.</string>
+    <string name="amount">Monto</string>
+    <string name="currency_ar">AR$</string>
+    <string name="next">Continuar</string>
+
+    <!-- Payment Method Activity -->
+    <string name="payment_method_title">Método de pago</string>
+
+    <!-- Payment Card Issuer Activity -->
+    <string name="payment_bank_title">Seleccione el banco</string>
+
+    <!-- Payment Installments Activity -->
+    <string name="payment_installments_title">Cantidad de cuotas</string>
+
+    <string name="installments_count_message">Cantidad: <b>%1$s</b></string>
+    <string name="installment_amount_message">Monto: <b>AR$ %1$s</b></string>
+    <string name="total_amount_message">Total: <b>AR$ %1$s</b></string>
+
+    <!-- Payment Dialog -->
+    <string name="payment_dialog_title">Datos del pago</string>
+
+    <string name="close">Cerrar</string>
+
+    <string name="payment_amount_message">A pagar: <b>AR$ %1$s</b></string>
+    <string name="installments_label">Cuotas:</string>
+    <string name="bank_label">Banco:</string>
+    <string name="payment_method_label">Método de pago:</string>
+</resources>
